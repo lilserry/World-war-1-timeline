@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline: World War I</title>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <link href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Interactive Timeline: World War I (1914–1918)</h1>
+    <div id="timeline-embed" style="width: 100%; height: 600px;"></div>
+
+    <script>
+        var timelineData = {
+            "title": {
+                "text": {
+                    "headline": "World War I: 1914–1918",
+                    "text": "Explore the key events that shaped World War I."
+                }
+            },
+            "events": [
+                {
+                    "start_date": {"year": "1914", "month": "6", "day": "28"},
+                    "text": {
+                        "headline": "Assassination of Archduke Franz Ferdinand",
+                        "text": "Archduke Franz Ferdinand of Austria-Hungary is assassinated in Sarajevo, sparking the conflict."
+                    }
+                },
+                {
+                    "start_date": {"year": "1914", "month": "7", "day": "28"},
+                    "text": {
+                        "headline": "Austria-Hungary Declares War on Serbia",
+                        "text": "This event triggers the activation of alliances across Europe."
+                    }
+                },
+                {
+                    "start_date": {"year": "1914", "month": "9", "day": "6"},
+                    "end_date": {"year": "1914", "month": "9", "day": "12"},
+                    "text": {
+                        "headline": "First Battle of the Marne",
+                        "text": "The Allied forces halt the German advance into France, marking the start of trench warfare."
+                    }
+                },
+                {
+                    "start_date": {"year": "1915", "month": "4", "day": "22"},
+                    "text": {
+                        "headline": "Second Battle of Ypres",
+                        "text": "Germany uses poison gas for the first time in warfare."
+                    }
+                },
+                {
+                    "start_date": {"year": "1916", "month": "2", "day": "21"},
+                    "end_date": {"year": "1916", "month": "12", "day": "18"},
+                    "text": {
+                        "headline": "Battle of Verdun",
+                        "text": "One of the longest and bloodiest battles of the war, resulting in over 700,000 casualties."
+                    }
+                },
+                {
+                    "start_date": {"year": "1917", "month": "4", "day": "6"},
+                    "text": {
+                        "headline": "United States Enters the War",
+                        "text": "The U.S. declares war on Germany, boosting Allied morale."
+                    }
+                },
+                {
+                    "start_date": {"year": "1918", "month": "11", "day": "11"},
+                    "text": {
+                        "headline": "Armistice Signed",
+                        "text": "The war ends with the signing of the armistice in a railway car in Compiègne, France."
+                    }
+                }
+            ]
+        };
+
+        window.timeline = new TL.Timeline('timeline-embed', timelineData);
+    </script>
+</body>
+</html>
